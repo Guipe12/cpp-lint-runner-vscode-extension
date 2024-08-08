@@ -3,6 +3,7 @@ node_modules/
 
 # Output directory
 out/
+bin/
 
 # VS Code settings
 .vscode/
@@ -37,4 +38,5 @@ Thumbs.db
 # Ignore build script files
 dist/
 
-./vsc-extension-quickstart.md
+# temp files
+vsc-extension-quickstart.md
