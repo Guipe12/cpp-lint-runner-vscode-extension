@@ -40,3 +40,6 @@ dist/
 
 # temp files
 vsc-extension-quickstart.md
+
+#binaries
+*.vsix
