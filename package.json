@@ -1,0 +1,60 @@
+{
+    "name": "cpplint-vscode",
+    "displayName": "cpplint-vscode",
+    "description": "extension to run cpplinter tool",
+    "version": "0.0.3",
+    "publisher": "Juggernaut007",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Linters"
+    ],
+    "activationEvents": [
+        "onCommand:cpplint.runLint"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "cpplint.runLint",
+                "title": "Run cpplinter"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "cpplint.runLint",
+                "key": "ctrl+alt+l",
+                "mac": "cmd+alt+l",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "clean": "rimraf dist",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.41",
+        "@types/vscode": "^1.60.0",
+        "typescript": "^4.3.5",
+        "vscode": "^1.1.37",
+        "rimraf": "^3.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "keywords": [
+        "vscode",
+        "extension",
+        "linter",
+        "C++",
+        "cpplint"
+    ],
+    "author": "Rishi",
+    "license": "MIT"
+}
