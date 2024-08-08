@@ -37,4 +37,4 @@ Thumbs.db
 # Ignore build script files
 dist/
 
-.vsc-extension-quickstart.md
+./vsc-extension-quickstart.md
