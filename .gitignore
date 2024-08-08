@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+
+# Output directory
+out/
+
+# VS Code settings
+.vscode/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# macOS Finder
+*.DS_Store
+
+# macOS resource forks
+._*
+
+# Windows image file caches
+Thumbs.db
+
+# Linux trash
+.Trash-*
+
+# Ignore build script files
+dist/
